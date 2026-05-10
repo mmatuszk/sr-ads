@@ -1,16 +1,20 @@
 # Google Audiences
 
-This folder tracks reusable Google Ads audience strategy, source exports, generated audience data, and generation logic.
+This folder tracks reusable Google Ads audience strategy, aggregate run summaries, and generation logic.
 
-Because this is a private repo, dated audience runs may include the source export and generated upload/review files needed to reproduce a decision.
+Raw customer exports and generated Customer Match upload/review files contain customer PII and must stay out of git, even in this private repo. Store those sensitive artifacts locally or in the restricted Google Drive folder for this project.
 
 Track:
 
 - audience methodology
 - run notes and decision records
 - scripts that regenerate upload files from source exports
+- aggregate summary JSON files
+
+Do not track:
+
 - source exports used for a dated run
-- generated audience workbooks, CSVs, and summary JSON files
+- generated audience workbooks or CSVs containing customer identifiers
 
 Use dated run folders:
 
@@ -18,6 +22,12 @@ Use dated run folders:
 google/audiences/runs/YYYY-MM-DD-short-description/
   source/
   output/
+```
+
+Sensitive cross-computer artifacts for this project should be stored in the restricted Google Drive folder:
+
+```text
+https://drive.google.com/drive/folders/1Q1IQo3dV0vtZTIwP52Ovpjh6WYawUKIr
 ```
 
 ## Customer Match Builder
@@ -31,7 +41,10 @@ google/audiences/scripts/build_customer_match.py
 Example:
 
 ```bash
-python3 google/audiences/scripts/build_customer_match.py \
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+
+.venv/bin/python google/audiences/scripts/build_customer_match.py \
   --input /Users/marcin/Downloads/Export_2026-05-09_173702.xlsx \
   --output google/audiences/runs/2026-05-09-performance-max-customer-match/output/customer_match_2026-05-09.xlsx \
   --csv-output google/audiences/runs/2026-05-09-performance-max-customer-match/output/customer_match_2026-05-09.csv \

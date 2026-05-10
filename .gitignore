@@ -2,3 +2,10 @@
 
 __pycache__/
 .venv/
+
+# Local sensitive ad audience artifacts. Keep aggregate summaries in git.
+.local-sensitive-backup/
+google/audiences/runs/*/source/*.xlsx
+google/audiences/runs/*/source/*.csv
+google/audiences/runs/*/output/customer_match_*.xlsx
+google/audiences/runs/*/output/customer_match_*.csv

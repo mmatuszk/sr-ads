@@ -8,10 +8,9 @@ This note records the customer selection logic used to create a Google Performan
 
 - `/Users/marcin/Downloads/Export_2026-05-09_173702.xlsx`
 
-The repo is private, so the exact source and generated output for this run are tracked in:
+The repo keeps only methodology and aggregate summaries. The exact source export and generated Customer Match files for this run contain customer PII, so they are intentionally ignored by git and stored locally or in the restricted Google Drive folder:
 
-- `google/audiences/runs/2026-05-09-performance-max-customer-match/source/`
-- `google/audiences/runs/2026-05-09-performance-max-customer-match/output/`
+- `https://drive.google.com/drive/folders/1Q1IQo3dV0vtZTIwP52Ovpjh6WYawUKIr`
 
 ## Business Context
 
@@ -33,7 +32,7 @@ The export includes older imported orders going back to 2009 and recent orders t
 
 ## Selection Window
 
-Customer activity was evaluated over the trailing three years from the latest processed order:
+Customer activity was evaluated over the trailing three years from the latest processed order using inclusive calendar dates:
 
 - Start: `2023-05-09`
 - End: `2026-05-08`
@@ -77,11 +76,11 @@ Reasons in the output identify the qualifying behavior and useful PMax signal co
 
 From the eligible recent data:
 
-- valid recent orders: `2,983`
-- valid recent customers: `1,797`
-- selected customers: `688`
-- selected recent orders: `1,874`
-- selected recent spend represented: `$866,529.89`
+- valid recent orders: `2,985`
+- valid recent customers: `1,798`
+- selected customers: `689`
+- selected recent orders: `1,876`
+- selected recent spend represented: `$867,243.87`
 
 ## Interpretation
 

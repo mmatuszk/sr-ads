@@ -156,7 +156,7 @@ def main() -> None:
     if max_processed_at is None:
         raise RuntimeError("No processed order dates found.")
 
-    recent_cutoff = max_processed_at - dt.timedelta(days=365 * args.lookback_years)
+    recent_cutoff = (max_processed_at - dt.timedelta(days=365 * args.lookback_years)).date()
     customers = defaultdict(
         lambda: {
             "orders": 0,
@@ -183,7 +183,7 @@ def main() -> None:
             continue
         if email in excluded_emails or any(fragment in email for fragment in excluded_fragments):
             continue
-        if not processed_at or processed_at < recent_cutoff:
+        if not processed_at or processed_at.date() < recent_cutoff:
             continue
         if row[idx["Cancelled At"]] or payment_status == "voided" or total <= 0:
             continue
@@ -267,7 +267,7 @@ def main() -> None:
         "output": str(args.output),
         "csv_output": str(args.csv_output) if args.csv_output else None,
         "latest_processed_order": max_processed_at.isoformat(sep=" "),
-        "recent_cutoff": recent_cutoff.isoformat(sep=" "),
+        "recent_cutoff": recent_cutoff.isoformat(),
         "top_order_rows": len(order_rows),
         "valid_recent_orders": valid_recent_orders,
         "valid_recent_customers": len(customers),
