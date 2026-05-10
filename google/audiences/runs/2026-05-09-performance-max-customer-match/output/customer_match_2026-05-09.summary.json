@@ -1,0 +1,21 @@
+{
+  "input": "google/audiences/runs/2026-05-09-performance-max-customer-match/source/Export_2026-05-09_173702.xlsx",
+  "output": "google/audiences/runs/2026-05-09-performance-max-customer-match/output/customer_match_2026-05-09.xlsx",
+  "csv_output": "google/audiences/runs/2026-05-09-performance-max-customer-match/output/customer_match_2026-05-09.csv",
+  "latest_processed_order": "2026-05-08 19:50:30",
+  "recent_cutoff": "2023-05-09 19:50:30",
+  "top_order_rows": 3973,
+  "valid_recent_orders": 2983,
+  "valid_recent_customers": 1797,
+  "selected_customers": 688,
+  "selected_recent_orders": 1874,
+  "selected_recent_spend": 866529.89,
+  "rules": {
+    "lookback_years": 3,
+    "min_recent_spend": 250,
+    "repeat_order_min": 2,
+    "large_single_order": 500,
+    "lifetime_spend": 3000,
+    "lifetime_recent_spend": 100
+  }
+}
