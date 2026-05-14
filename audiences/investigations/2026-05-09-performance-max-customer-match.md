@@ -103,10 +103,8 @@ This list is appropriate for:
 Use the tracked builder:
 
 ```bash
-python3 google/audiences/scripts/build_customer_match.py \
-  --input google/audiences/runs/2026-05-09-performance-max-customer-match/source/Export_2026-05-09_173702.xlsx \
-  --output google/audiences/runs/2026-05-09-performance-max-customer-match/output/customer_match_2026-05-09.xlsx \
-  --csv-output google/audiences/runs/2026-05-09-performance-max-customer-match/output/customer_match_2026-05-09.csv \
-  --summary-output google/audiences/runs/2026-05-09-performance-max-customer-match/output/customer_match_2026-05-09.summary.json \
-  --exclude-email marcin201@gmail.com
+.venv/bin/python audiences/scripts/build_customer_match.py \
+  --run audiences/runs/2026-05-09-performance-max-customer-match \
+  --preset baseline \
+  --exclude-email owner@example.com
 ```

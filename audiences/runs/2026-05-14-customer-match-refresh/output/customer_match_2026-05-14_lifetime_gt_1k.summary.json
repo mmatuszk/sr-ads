@@ -1,0 +1,28 @@
+{
+  "config": "audiences/config/customer_match/workflow.yaml",
+  "preset": "lifetime_gt_1k",
+  "preset_description": "Long-window list selected only by lifetime spend over $1,000.",
+  "input": "audiences/runs/2026-05-14-customer-match-refresh/source/Export_orders_2026-05-14_122045.xlsx",
+  "output": "audiences/runs/2026-05-14-customer-match-refresh/output/customer_match_2026-05-14_lifetime_gt_1k.xlsx",
+  "csv_output": "audiences/runs/2026-05-14-customer-match-refresh/output/customer_match_2026-05-14_lifetime_gt_1k.csv",
+  "google_upload_output": "audiences/runs/2026-05-14-customer-match-refresh/output/customer_match_2026-05-14_lifetime_gt_1k.google_upload.csv",
+  "pinterest_upload_output": "audiences/runs/2026-05-14-customer-match-refresh/output/customer_match_2026-05-14_lifetime_gt_1k.pinterest_upload.csv",
+  "latest_processed_order": "2026-05-14 09:59:07",
+  "recent_cutoff": "2009-05-18",
+  "top_order_rows": 3995,
+  "valid_recent_orders": 3918,
+  "valid_recent_customers": 2291,
+  "selected_customers": 282,
+  "selected_customers_before_limit": 282,
+  "selected_recent_orders": 1155,
+  "selected_recent_spend": 1062320.92,
+  "rules": {
+    "lookback_years": 17,
+    "min_recent_spend": 999999999,
+    "repeat_order_min": 999999999,
+    "large_single_order": 999999999,
+    "lifetime_spend": 1000,
+    "lifetime_recent_spend": 0,
+    "max_customers": null
+  }
+}

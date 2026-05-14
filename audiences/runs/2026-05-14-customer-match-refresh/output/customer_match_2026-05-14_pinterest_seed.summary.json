@@ -1,0 +1,28 @@
+{
+  "config": "audiences/config/customer_match/workflow.yaml",
+  "preset": "pinterest_seed",
+  "preset_description": "Five-year buyer-quality seed sized for Pinterest customer-list matching and actalike source use.",
+  "input": "audiences/runs/2026-05-14-customer-match-refresh/source/Export_orders_2026-05-14_122045.xlsx",
+  "output": "audiences/runs/2026-05-14-customer-match-refresh/output/customer_match_2026-05-14_pinterest_seed.xlsx",
+  "csv_output": "audiences/runs/2026-05-14-customer-match-refresh/output/customer_match_2026-05-14_pinterest_seed.csv",
+  "google_upload_output": "audiences/runs/2026-05-14-customer-match-refresh/output/customer_match_2026-05-14_pinterest_seed.google_upload.csv",
+  "pinterest_upload_output": "audiences/runs/2026-05-14-customer-match-refresh/output/customer_match_2026-05-14_pinterest_seed.pinterest_upload.csv",
+  "latest_processed_order": "2026-05-14 09:59:07",
+  "recent_cutoff": "2021-05-15",
+  "top_order_rows": 3995,
+  "valid_recent_orders": 3517,
+  "valid_recent_customers": 2059,
+  "selected_customers": 978,
+  "selected_customers_before_limit": 978,
+  "selected_recent_orders": 2436,
+  "selected_recent_spend": 1159494.79,
+  "rules": {
+    "lookback_years": 5,
+    "min_recent_spend": 100,
+    "repeat_order_min": 2,
+    "large_single_order": 500,
+    "lifetime_spend": 1000,
+    "lifetime_recent_spend": 100,
+    "max_customers": 2000
+  }
+}

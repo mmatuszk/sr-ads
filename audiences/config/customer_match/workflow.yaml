@@ -1,0 +1,110 @@
+config_version: 1
+
+workflow:
+  name: "customer_match"
+  display_name: "Customer Match Audience Builder"
+  source_of_truth: "shopify_orders"
+
+mode:
+  input: "matrixify_orders"
+  output: "customer_match_review"
+
+files:
+  source_dir: "source"
+  output_dir: "output"
+  input_selection: "latest_matching"
+  input_pattern: "Export_*.xlsx"
+  output_prefix: "customer_match"
+
+matrixify:
+  sheet_name: "Orders"
+  columns:
+    top_row: "Top Row"
+    processed_at: "Processed At"
+    email: "Email"
+    customer_email: "Customer: Email"
+    current_total: "Price: Current Total"
+    total: "Price: Total"
+    payment_status: "Payment: Status"
+    cancelled_at: "Cancelled At"
+    order_id: "ID"
+    customer_tags: "Customer: Tags"
+    order_tags: "Tags"
+    customer_total_spent: "Customer: Total Spent"
+    customer_orders_count: "Customer: Orders Count"
+    line_type: "Line: Type"
+    line_title: "Line: Title"
+    line_name: "Line: Name"
+    line_sku: "Line: SKU"
+    line_product_handle: "Line: Product Handle"
+    line_vendor: "Line: Vendor"
+    line_total: "Line: Total"
+
+defaults:
+  lookback_years: 3
+  min_recent_spend: 250
+  repeat_order_min: 2
+  large_single_order: 500
+  lifetime_spend: 3000
+  lifetime_recent_spend: 100
+  max_customers: null
+  exclude_email_fragments:
+    - "@silkresource"
+
+presets:
+  baseline:
+    description: "Default 3-year high-signal audience."
+
+  lifetime_1k_recent_100:
+    description: "Baseline rules with lower lifetime-value threshold."
+    lifetime_spend: 1000
+    lifetime_recent_spend: 100
+
+  lifetime_3k_recent_500:
+    description: "Baseline rules with stricter recent spend required for lifetime-value inclusion."
+    lifetime_spend: 3000
+    lifetime_recent_spend: 500
+
+  pinterest_seed:
+    description: "Five-year buyer-quality seed sized for Pinterest customer-list matching and actalike source use."
+    lookback_years: 5
+    min_recent_spend: 100
+    repeat_order_min: 2
+    large_single_order: 500
+    lifetime_spend: 1000
+    lifetime_recent_spend: 100
+    max_customers: 2000
+
+  broad_2k:
+    description: "Broader 5-year audience capped at 2,000 customers."
+    lookback_years: 5
+    min_recent_spend: 1
+    repeat_order_min: 2
+    large_single_order: 500
+    lifetime_spend: 3000
+    lifetime_recent_spend: 100
+    max_customers: 2000
+
+  5yr_lifetime_1k_recent_100:
+    description: "Five-year version of the lower lifetime-value threshold."
+    lookback_years: 5
+    lifetime_spend: 1000
+    lifetime_recent_spend: 100
+
+  5yr_order_gt_300:
+    description: "Five-year list selected only by single order value over $300."
+    lookback_years: 5
+    min_recent_spend: 999999999
+    repeat_order_min: 999999999
+    large_single_order: 300
+    lifetime_spend: 999999999
+    lifetime_recent_spend: 999999999
+
+  lifetime_gt_1k:
+    description: "Long-window list selected only by lifetime spend over $1,000."
+    lookback_years: 17
+    min_recent_spend: 999999999
+    repeat_order_min: 999999999
+    large_single_order: 999999999
+    lifetime_spend: 1000
+    lifetime_recent_spend: 0

@@ -1,0 +1,26 @@
+{
+  "config": "audiences/config/customer_match/workflow.yaml",
+  "preset": "baseline",
+  "preset_description": "Default 3-year high-signal audience.",
+  "input": "audiences/runs/2026-05-14-customer-match-refresh/source/Export_orders_2026-05-14_122045.xlsx",
+  "output": "audiences/runs/2026-05-14-customer-match-refresh/output/customer_match_2026-05-14.xlsx",
+  "csv_output": "audiences/runs/2026-05-14-customer-match-refresh/output/customer_match_2026-05-14.csv",
+  "latest_processed_order": "2026-05-14 09:59:07",
+  "recent_cutoff": "2023-05-15",
+  "top_order_rows": 3995,
+  "valid_recent_orders": 3004,
+  "valid_recent_customers": 1810,
+  "selected_customers": 691,
+  "selected_customers_before_limit": 691,
+  "selected_recent_orders": 1885,
+  "selected_recent_spend": 897511.46,
+  "rules": {
+    "lookback_years": 3,
+    "min_recent_spend": 250,
+    "repeat_order_min": 2,
+    "large_single_order": 500,
+    "lifetime_spend": 3000,
+    "lifetime_recent_spend": 100,
+    "max_customers": null
+  }
+}

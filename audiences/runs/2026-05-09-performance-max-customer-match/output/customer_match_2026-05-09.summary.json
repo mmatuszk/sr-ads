@@ -1,7 +1,7 @@
 {
-  "input": "google/audiences/runs/2026-05-09-performance-max-customer-match/source/Export_2026-05-09_173702.xlsx",
-  "output": "google/audiences/runs/2026-05-09-performance-max-customer-match/output/customer_match_2026-05-09.xlsx",
-  "csv_output": "google/audiences/runs/2026-05-09-performance-max-customer-match/output/customer_match_2026-05-09.csv",
+  "input": "audiences/runs/2026-05-09-performance-max-customer-match/source/Export_2026-05-09_173702.xlsx",
+  "output": "audiences/runs/2026-05-09-performance-max-customer-match/output/customer_match_2026-05-09.xlsx",
+  "csv_output": "audiences/runs/2026-05-09-performance-max-customer-match/output/customer_match_2026-05-09.csv",
   "latest_processed_order": "2026-05-08 19:50:30",
   "recent_cutoff": "2023-05-09",
   "top_order_rows": 3973,
