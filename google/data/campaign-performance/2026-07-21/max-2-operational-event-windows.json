@@ -1,0 +1,97 @@
+{
+  "generated_on": "2026-07-21",
+  "campaign": {"id": 20647427212, "name": "Performance Max-2"},
+  "sample_platform_rollout": {
+    "catalog_sync_run_id": "20260530T044721Z",
+    "catalog_sync": {"candidate_products": 3054, "created_products": 3034, "skipped_linked_products": 20, "errors": 0},
+    "theme_release": {"tag": "sr-20260530-104752", "committed_at": "2026-05-30T10:48:05-07:00"},
+    "direct_google_ads_product_exposure_through_2026_07_19": {"matched_native_sample_product_rows": 0, "impressions": 0, "clicks": 0, "cost": 0.0, "conversion_value": 0.0},
+    "shopify_order_signal": {
+      "pre_28_days": {"dates": "2026-05-02 through 2026-05-29", "valid_orders": 34, "web_orders": 12, "shopify_draft_orders": 22, "legacy_product_samples_app_orders": 21, "legacy_sample_order_value": 280.27, "legacy_sample_order_median_total": 10.97, "native_sample_orders": 0},
+      "post_28_days": {"dates": "2026-05-31 through 2026-06-27", "valid_orders": 147, "web_orders": 144, "shopify_draft_orders": 3, "legacy_product_samples_app_orders": 0, "native_sample_orders": 105, "native_sample_only_orders": 102, "native_mixed_orders": 3, "native_sample_only_median_subtotal": 2.99, "native_sample_only_median_total": 8.25, "native_sample_only_total_value": 1280.22, "native_mixed_order_total_value": 4137.92},
+      "interpretation": "The native flow moved sample purchases from draft-order creation to normal web checkout. This can change which sample purchases fire or qualify for the Google Shopping App Purchase conversion even though the sample products are not advertised."
+    },
+    "google_ads_pre_post": {
+      "pre_28_days": {"dates": "2026-05-02 through 2026-05-29", "spend_per_day": 303.52, "impressions_per_day": 23417, "clicks_per_day": 268.6, "cpc": 1.13, "ctr_percent": 1.147, "conversions_per_day": 2.65, "average_conversion_value": 126.42, "roas": 1.104},
+      "post_28_days": {"dates": "2026-05-31 through 2026-06-27", "spend_per_day": 320.95, "impressions_per_day": 23640, "clicks_per_day": 304.0, "cpc": 1.056, "ctr_percent": 1.286, "conversions_per_day": 3.464, "average_conversion_value": 110.8, "roas": 1.196},
+      "post_vs_pre_percent": {"spend_per_day": 5.7, "impressions_per_day": 1.0, "clicks_per_day": 13.2, "cpc": -6.6, "ctr": 12.1, "conversions_per_day": 30.7, "average_conversion_value": -12.4, "roas": 8.3},
+      "interpretation": "The 28-day window is consistent with conversion-mix dilution, not worse traffic: attributed conversion count rose while average attributed conversion value fell, CPC fell, and CTR improved. Aggregate data cannot prove which Google-attributed conversions were sample orders."
+    }
+  },
+  "budget_changes": [
+    {
+      "date": "2026-04-23", "daily_budget_before": 360.0, "daily_budget_after": 285.0, "change_percent": -20.8, "window": "14 days before versus 14 days after, excluding change day",
+      "post_vs_pre_percent": {"spend_per_day": -19.7, "impressions_per_day": -12.1, "clicks_per_day": -17.9, "cpm": -8.6, "cpc": -2.2, "ctr": -6.5, "conversions_per_day": -20.7, "average_conversion_value": -58.0, "roas": -58.6},
+      "interpretation": "The cut reduced volume nearly in proportion to spend, while CPC was nearly flat. The ROAS comparison is confounded by unusually large pre-change orders and the April pricing incident."
+    },
+    {
+      "date": "2026-05-16", "daily_budget_before": 285.0, "daily_budget_after": 315.0, "change_percent": 10.5,
+      "first_7_days_post_vs_pre_percent": {"spend_per_day": 26.8, "impressions_per_day": 41.0, "clicks_per_day": 26.2, "cpm": -10.1, "cpc": 0.5, "ctr": -10.5, "conversions_per_day": 31.6, "average_conversion_value": -14.9, "roas": -11.7},
+      "first_14_days_post_vs_pre_percent": {"spend_per_day": 8.9, "impressions_per_day": 13.1, "clicks_per_day": 8.1, "cpm": -3.7, "cpc": 0.8, "ctr": -4.5, "conversions_per_day": -7.0, "average_conversion_value": 31.4, "roas": 12.3},
+      "interpretation": "The increase expanded traffic without raising CPC materially. The ROAS sign reverses between the 7-day and 14-day windows, so these data do not show a stable causal efficiency loss from the budget increase."
+    }
+  ],
+  "july_vs_june": {
+    "google_ads": {
+      "june_full": {"dates": "2026-06-01 through 2026-06-30", "days": 30, "spend": 9537.65, "conversion_value": 13057.70, "roas": 1.3691, "conversions": 105.4202, "average_conversion_value": 123.86, "impressions": 690887, "clicks": 8968, "ctr": 0.01298, "cpc": 1.0635, "conversion_rate": 0.011046, "spend_per_day": 317.92},
+      "june_1_to_19": {"dates": "2026-06-01 through 2026-06-19", "days": 19, "spend": 6201.29, "conversion_value": 6434.07, "roas": 1.0375, "conversions": 62.8547, "average_conversion_value": 102.36, "impressions": 473651, "clicks": 5800, "ctr": 0.012245, "cpc": 1.0692, "conversion_rate": 0.010199, "spend_per_day": 326.38},
+      "july_1_to_19": {"dates": "2026-07-01 through 2026-07-19", "days": 19, "spend": 6037.67, "conversion_value": 4439.60, "roas": 0.7353, "conversions": 50.3523, "average_conversion_value": 88.17, "impressions": 390607, "clicks": 4990, "ctr": 0.012775, "cpc": 1.2100, "conversion_rate": 0.009681, "spend_per_day": 317.77},
+      "july_vs_matched_june_percent": {"spend": -2.6, "conversion_value": -31.0, "roas": -29.1, "conversions": -19.9, "average_conversion_value": -13.9, "impressions": -17.5, "clicks": -14.0, "ctr": 4.3, "cpc": 13.2, "conversion_rate": -5.1},
+      "july_vs_full_june_daily_rate_percent": {"spend_per_day": 0.0, "conversion_value_per_day": -46.3, "roas": -46.3},
+      "interpretation": "July is worse through July 19. Against matched June days, nearly unchanged spend produced 31% less attributed value. Higher traffic cost and lower average conversion value are the main measurable drivers; conversion rate was only modestly lower."
+    },
+    "shopify_all_channel_context": {
+      "june_1_to_19": {"valid_orders": 86, "order_value": 10970.15, "native_sample_orders": 62, "native_sample_orders_per_day": 3.2632, "native_sample_share": 0.7209, "non_sample_orders": 24, "non_sample_order_value": 10141.20},
+      "july_1_to_19": {"valid_orders": 117, "order_value": 22466.23, "native_sample_orders": 85, "native_sample_orders_per_day": 4.4737, "native_sample_share": 0.7265, "non_sample_orders": 32, "non_sample_order_value": 20605.15},
+      "interpretation": "All-channel Shopify order activity improved in July while Google-attributed Max-2 value declined. Native samples remained about 72% of valid orders in both matched windows, so sample share did not increase materially, though absolute native sample volume rose 37%."
+    }
+  },
+  "random_variation_test": {
+    "historical_order_concentration_through_2026_05_08": {
+      "orders": 3507,
+      "revenue": 1146000,
+      "median_order_value": 22,
+      "mean_order_value": 327,
+      "order_value_p90": 863,
+      "order_value_p95": 1719,
+      "order_value_p99": 4700,
+      "maximum_order_value": 18120,
+      "top_1_percent_revenue_share": 0.22,
+      "top_5_percent_revenue_share": 0.54,
+      "top_10_percent_revenue_share": 0.72,
+      "source": "business-trends/investigations/2026-05-09-order-history-ad-measurement-window.md"
+    },
+    "google_ads_rolling_19_day_windows": {
+      "baseline_dates": "Window starts 2026-01-01 through 2026-06-12 and ends by 2026-06-30",
+      "rolling_window_count": 163,
+      "baseline_roas_median": 2.081,
+      "baseline_roas_p10": 1.031,
+      "baseline_roas_p25": 1.421,
+      "july_1_to_19_roas": 0.735,
+      "july_roas_percentile": 0.012,
+      "july_vs_june_1_to_19_change": -0.291,
+      "share_of_adjacent_19_day_comparisons_as_bad_or_worse": 0.331,
+      "caveat": "Rolling windows overlap heavily, so the percentile and frequency are descriptive rather than independent statistical tests."
+    },
+    "single_large_order_sensitivity": {
+      "june_1_to_19_attributed_value": 6434.07,
+      "july_1_to_19_attributed_value": 4439.60,
+      "attributed_value_gap": 1994.47,
+      "july_roas_actual": 0.735,
+      "july_roas_with_one_historical_p95_order": 1.020,
+      "july_roas_with_one_2000_order": 1.067,
+      "june_1_to_19_roas": 1.038
+    },
+    "matched_all_channel_shopify_large_orders": {
+      "june_1_to_19": {"revenue": 10970.15, "largest_order": 1626.80, "top_3_order_revenue": 4046.24, "top_3_revenue_share": 0.369, "orders_1000_plus": 4},
+      "july_1_to_19": {"revenue": 22466.23, "largest_order": 2115.93, "top_3_order_revenue": 5886.75, "top_3_revenue_share": 0.262, "orders_1000_plus": 8}
+    },
+    "interpretation": "The size of the July decline is consistent with ordinary large-order timing: one historical 95th-percentile attributed order would almost erase the matched-period ROAS gap. The absolute July ROAS level is nevertheless unusually low and should be monitored over a 56-90 day window. All-channel Shopify revenue and large-order counts improved in July, so there is no corresponding store-wide demand collapse."
+  },
+  "limitations": [
+    "Shopify orders and Google Ads conversions are compared in aggregate; they are not joined at the order or click level.",
+    "A native sample order can affect Google Smart Bidding only when it is attributed to Google Ads and included in the campaign's primary purchase goal.",
+    "The May 16 budget increase, May 28 Merchant Center catalog change, and May 30 native sample rollout are close together and confound simple pre/post comparisons.",
+    "Sample purchases carry downstream value that is only partly captured inside Google's 30-day attribution window."
+  ]
+}

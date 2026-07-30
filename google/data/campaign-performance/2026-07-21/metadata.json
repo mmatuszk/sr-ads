@@ -1,0 +1,67 @@
+{
+  "account": {
+    "account_id": 5626118344,
+    "account_name": "",
+    "currency_code": "USD",
+    "time_zone": "America/Los_Angeles"
+  },
+  "adjustment": {
+    "excluded_conversion_action_names": [
+      "[85ed] Google for WooCommerce purchase action"
+    ],
+    "method": "Subtract excluded actions from reported conversions and conversion value; retain reported cost."
+  },
+  "campaign": {
+    "campaign_id": 20647427212,
+    "campaign_name": "Performance Max-2",
+    "channel_type": "PERFORMANCE_MAX",
+    "status": "ENABLED"
+  },
+  "data_quality": {
+    "weeks_with_multiple_value_bearing_conversion_actions": [
+      "2024-10-14",
+      "2024-10-21",
+      "2024-10-28",
+      "2024-11-04",
+      "2024-11-11",
+      "2024-11-18",
+      "2024-11-25",
+      "2024-12-09",
+      "2024-12-16",
+      "2024-12-23",
+      "2024-12-30",
+      "2025-01-06",
+      "2025-10-13",
+      "2025-10-20"
+    ],
+    "weeks_with_multiple_value_bearing_conversion_actions_count": 14
+  },
+  "files": {
+    "performance-max-2-weekly-adjusted.csv": {
+      "rows": 104
+    },
+    "performance-max-2-weekly-campaign.csv": {
+      "rows": 104
+    },
+    "performance-max-2-weekly-conversion-actions.csv": {
+      "rows": 524
+    }
+  },
+  "notes": [
+    "Currency metrics are converted from micros to account currency.",
+    "Derived rates are stored as decimal ratios, not percentages.",
+    "Conversion data can be restated after retrieval because of attribution lag.",
+    "Weeks without a Google Ads metrics row are emitted with zeros and api_row_returned=false.",
+    "Multiple value-bearing conversion actions in one week can indicate tracking overlap; review conversion-action detail before interpreting ROAS."
+  ],
+  "read_only": true,
+  "reporting_window": {
+    "complete_weeks": 104,
+    "current_partial_week_excluded": true,
+    "end_date": "2026-07-19",
+    "start_date": "2024-07-22",
+    "week_definition": "Monday through Sunday"
+  },
+  "retrieved_at_utc": "2026-07-21T16:09:15.700478+00:00",
+  "source": "Google Ads API"
+}

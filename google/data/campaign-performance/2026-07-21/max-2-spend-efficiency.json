@@ -1,0 +1,116 @@
+{
+  "retrieved_at_utc": "2026-07-21T18:23:03Z",
+  "campaign_id": 20647427212,
+  "campaign_name": "Performance Max-2",
+  "live_settings": {
+    "status": "ENABLED",
+    "bidding_strategy": "MAXIMIZE_CONVERSION_VALUE",
+    "target_roas": 0.6585798037855759,
+    "daily_budget": 315.0,
+    "google_recommended_daily_budget": 950.0,
+    "optimization_score": 0.778899048656246
+  },
+  "historical_control_context": {
+    "target_roas_condition": "Owner confirms the same target ROAS has been used for Max-2 for many years, including the matched WooCommerce and Shopify periods.",
+    "documented_2026_budget_changes": [
+      {
+        "date": "2026-04-23",
+        "from": 360.0,
+        "to": 285.0
+      },
+      {
+        "date": "2026-05-16",
+        "from": 285.0,
+        "to": 315.0
+      }
+    ],
+    "interpretation": "The bidding target is not a platform-era confounder. Different budgets, eligible inventory, auction prices, demand, and order mix remain possible explanations for the higher Shopify-era spend."
+  },
+  "matched_period_efficiency": {
+    "WooCommerce": {
+      "impressions": 2512108,
+      "clicks": 25558,
+      "cost": 24853.700283,
+      "conversion_value": 81302.165771,
+      "ctr": 0.010173925643324252,
+      "cpc": 0.97244308173566,
+      "cpm": 9.893563605943692,
+      "click_conversion_rate": 0.0120229118866891,
+      "average_conversion_value": 264.58522258909744,
+      "conversion_value_per_1000_impressions": 32.36412040047641,
+      "roas": 3.2712298307793994
+    },
+    "Shopify": {
+      "impressions": 4649812,
+      "clicks": 54446,
+      "cost": 64205.570843,
+      "conversion_value": 153379.458769,
+      "ctr": 0.011709290612179589,
+      "cpc": 1.1792523021525916,
+      "cpm": 13.808207910986509,
+      "click_conversion_rate": 0.011923598758402822,
+      "average_conversion_value": 236.26199616354634,
+      "conversion_value_per_1000_impressions": 32.986163476931964,
+      "roas": 2.3888808518509133
+    }
+  },
+  "shopify_vs_woo_change": {
+    "impressions": 0.8509602294168881,
+    "clicks": 1.1302918851240316,
+    "cost": 1.5833405131595955,
+    "conversion_value": 0.8865359528184862,
+    "ctr": 0.1509117544870977,
+    "cpc": 0.2126697431461071,
+    "cpm": 0.3956758616977043,
+    "click_conversion_rate": -0.008260322392966257,
+    "average_conversion_value": -0.10704765046359843,
+    "conversion_value_per_1000_impressions": 0.01922014467744959,
+    "roas": -0.26973004789402366
+  },
+  "scale_comparison": {
+    "additional_cost": 39351.87056,
+    "additional_conversion_value": 72077.292998,
+    "additional_value_per_additional_cost": 1.8316103395416328,
+    "shopify_blended_break_even_contribution_margin": 0.4186060594965197,
+    "additional_scale_break_even_contribution_margin": 0.545967653933562
+  },
+  "recent_eight_complete_weeks": {
+    "start": "2026-05-25",
+    "end": "2026-07-19",
+    "cost": 17676.998691,
+    "conversion_value": 18570.052855,
+    "roas": 1.0505218228,
+    "break_even_contribution_margin": 0.9519078727
+  },
+  "sample_customer_funnel": {
+    "source": "Owner-provided current operating rates on 2026-07-21, combined with the 2026-05-29 aggregate order-history review for follow-on order value",
+    "purchase_within_three_weeks_rate": 0.11,
+    "lifetime_purchase_rate": 0.25,
+    "estimated_later_share_of_sample_customers": 0.14,
+    "estimated_share_of_eventual_converters_after_early_window": 0.56,
+    "historical_follow_on_order_value": {
+      "median": 508.0,
+      "average": 1169.0
+    },
+    "modeled_revenue_per_sample_customer": {
+      "median_order_value_basis": {
+        "lifetime_downstream_revenue": 127.0,
+        "later_potentially_uncaptured_revenue": 71.12,
+        "break_even_sample_acquisition_cost_at_50_percent_contribution_margin": 63.5
+      },
+      "average_order_value_basis": {
+        "lifetime_downstream_revenue": 292.25,
+        "later_potentially_uncaptured_revenue": 163.66,
+        "break_even_sample_acquisition_cost_at_50_percent_contribution_margin": 146.125
+      }
+    },
+    "ltv_adjusted_roas_formula": "(Google-attributed purchase value + sample customers acquired by Max-2 * estimated uncaptured downstream contribution value per sample customer) / Google Ads cost"
+  },
+  "decision_status": "The available data do not establish that the $315/day budget is excessive. Profitability requires Max-2-attributed sample-customer acquisition cost, downstream contribution margin, and a 90-180 day cohort reconciliation.",
+  "notes": [
+    "Google's recommended budget reflects available traffic, not Silk Resource profitability.",
+    "The additional-scale comparison is observational because it compares different years and commerce-platform eras.",
+    "The recent eight-week break-even margin uses only Google-attributed revenue and therefore understates value when sample customers purchase after the 30-day attribution window.",
+    "No campaign-level change event was returned for the target ROAS during June 22 through July 21, 2026."
+  ]
+}

@@ -1,0 +1,722 @@
+{
+  "campaign": {
+    "id": 20647427212,
+    "name": "Performance Max-2"
+  },
+  "comparison_weeks": [
+    {
+      "season_week": 1,
+      "shopify_conversion_value": 2542.557207,
+      "shopify_conversions": 19.668195,
+      "shopify_cost": 2037.335642,
+      "shopify_roas": 1.2479815080955619,
+      "shopify_rolling_4_week_roas": null,
+      "shopify_week_start": "2026-01-05",
+      "woo_conversion_value": 1739.607946,
+      "woo_conversions": 10.483557,
+      "woo_cost": 561.954798,
+      "woo_roas": 3.0956367882101437,
+      "woo_rolling_4_week_roas": null,
+      "woo_week_start": "2025-01-06"
+    },
+    {
+      "season_week": 2,
+      "shopify_conversion_value": 12666.275097,
+      "shopify_conversions": 38.535698,
+      "shopify_cost": 2202.574881,
+      "shopify_roas": 5.7506671878730105,
+      "shopify_rolling_4_week_roas": null,
+      "shopify_week_start": "2026-01-12",
+      "woo_conversion_value": 7091.634097,
+      "woo_conversions": 11.61323,
+      "woo_cost": 569.865151,
+      "woo_roas": 12.444407391039078,
+      "woo_rolling_4_week_roas": null,
+      "woo_week_start": "2025-01-13"
+    },
+    {
+      "season_week": 3,
+      "shopify_conversion_value": 10978.519182,
+      "shopify_conversions": 23.337232,
+      "shopify_cost": 2160.649529,
+      "shopify_roas": 5.081119836719249,
+      "shopify_rolling_4_week_roas": null,
+      "shopify_week_start": "2026-01-19",
+      "woo_conversion_value": 2253.517673,
+      "woo_conversions": 8.897673,
+      "woo_cost": 708.361837,
+      "woo_roas": 3.1813086974644564,
+      "woo_rolling_4_week_roas": null,
+      "woo_week_start": "2025-01-20"
+    },
+    {
+      "season_week": 4,
+      "shopify_conversion_value": 6219.958398,
+      "shopify_conversions": 20.610203,
+      "shopify_cost": 1980.578861,
+      "shopify_roas": 3.140474999748066,
+      "shopify_rolling_4_week_roas": 3.8666952332376887,
+      "shopify_week_start": "2026-01-26",
+      "woo_conversion_value": 365.132812,
+      "woo_conversions": 5.88663,
+      "woo_cost": 711.889398,
+      "woo_roas": 0.5129066580086925,
+      "woo_rolling_4_week_roas": 4.486509859044747,
+      "woo_week_start": "2025-01-27"
+    },
+    {
+      "season_week": 5,
+      "shopify_conversion_value": 1811.891286,
+      "shopify_conversions": 27.195481,
+      "shopify_cost": 2585.581962,
+      "shopify_roas": 0.7007672982830006,
+      "shopify_rolling_4_week_roas": 3.547460786654583,
+      "shopify_week_start": "2026-02-02",
+      "woo_conversion_value": 333.76034,
+      "woo_conversions": 8.504761,
+      "woo_cost": 795.466218,
+      "woo_roas": 0.41957827051305396,
+      "woo_rolling_4_week_roas": 3.6057250313012075,
+      "woo_week_start": "2025-02-03"
+    },
+    {
+      "season_week": 6,
+      "shopify_conversion_value": 1507.2986,
+      "shopify_conversions": 17.92011,
+      "shopify_cost": 2740.752945,
+      "shopify_roas": 0.5499578510897122,
+      "shopify_rolling_4_week_roas": 2.167153978521745,
+      "shopify_week_start": "2026-02-09",
+      "woo_conversion_value": 578.608514,
+      "woo_conversions": 8.627729,
+      "woo_cost": 765.622805,
+      "woo_roas": 0.755735735954208,
+      "woo_rolling_4_week_roas": 1.1843731454418913,
+      "woo_week_start": "2025-02-10"
+    },
+    {
+      "season_week": 7,
+      "shopify_conversion_value": 7337.900743,
+      "shopify_conversions": 20.125468,
+      "shopify_cost": 2257.046769,
+      "shopify_roas": 3.2511070854996538,
+      "shopify_rolling_4_week_roas": 1.764650634191549,
+      "shopify_week_start": "2026-02-16",
+      "woo_conversion_value": 366.978981,
+      "woo_conversions": 3.035811,
+      "woo_cost": 754.335242,
+      "woo_roas": 0.48649322021202873,
+      "woo_rolling_4_week_roas": 0.5432144898293613,
+      "woo_week_start": "2025-02-17"
+    },
+    {
+      "season_week": 8,
+      "shopify_conversion_value": 2177.097654,
+      "shopify_conversions": 23.328977,
+      "shopify_cost": 2574.439545,
+      "shopify_roas": 0.845658876794483,
+      "shopify_rolling_4_week_roas": 1.2634784570205815,
+      "shopify_week_start": "2026-02-23",
+      "woo_conversion_value": 4145.233184,
+      "woo_conversions": 8.286631,
+      "woo_cost": 704.277973,
+      "woo_roas": 5.885791325181769,
+      "woo_rolling_4_week_roas": 1.796395999160762,
+      "woo_week_start": "2025-02-24"
+    },
+    {
+      "season_week": 9,
+      "shopify_conversion_value": 9333.29076,
+      "shopify_conversions": 26.066635,
+      "shopify_cost": 2600.475927,
+      "shopify_roas": 3.5890702402183785,
+      "shopify_rolling_4_week_roas": 2.0009984930094156,
+      "shopify_week_start": "2026-03-02",
+      "woo_conversion_value": 973.906054,
+      "woo_conversions": 10.685521,
+      "woo_cost": 906.945149,
+      "woo_roas": 1.0738312620932273,
+      "woo_rolling_4_week_roas": 1.9368814532494398,
+      "woo_week_start": "2025-03-03"
+    },
+    {
+      "season_week": 10,
+      "shopify_conversion_value": 3084.105282,
+      "shopify_conversions": 30.011621,
+      "shopify_cost": 2523.094503,
+      "shopify_roas": 1.2223502838807463,
+      "shopify_rolling_4_week_roas": 2.2031410772438687,
+      "shopify_week_start": "2026-03-09",
+      "woo_conversion_value": 1339.333276,
+      "woo_conversions": 14.238963,
+      "woo_cost": 929.941976,
+      "woo_roas": 1.4402331656873182,
+      "woo_rolling_4_week_roas": 2.071142706967525,
+      "woo_week_start": "2025-03-10"
+    },
+    {
+      "season_week": 11,
+      "shopify_conversion_value": 6866.181321,
+      "shopify_conversions": 27.483607,
+      "shopify_cost": 2218.822979,
+      "shopify_roas": 3.0945151487905154,
+      "shopify_rolling_4_week_roas": 2.164065394319639,
+      "shopify_week_start": "2026-03-16",
+      "woo_conversion_value": 69.381043,
+      "woo_conversions": 7.743759,
+      "woo_cost": 892.665606,
+      "woo_roas": 0.0777234414921549,
+      "woo_rolling_4_week_roas": 1.9010411752087355,
+      "woo_week_start": "2025-03-17"
+    },
+    {
+      "season_week": 12,
+      "shopify_conversion_value": 3953.669337,
+      "shopify_conversions": 26.858855,
+      "shopify_cost": 2534.2404,
+      "shopify_roas": 1.5601003507796654,
+      "shopify_rolling_4_week_roas": 2.3527496462231143,
+      "shopify_week_start": "2026-03-23",
+      "woo_conversion_value": 2947.744662,
+      "woo_conversions": 16.135797,
+      "woo_cost": 866.129174,
+      "woo_roas": 3.4033545462815686,
+      "woo_rolling_4_week_roas": 1.4824350918216165,
+      "woo_week_start": "2025-03-24"
+    },
+    {
+      "season_week": 13,
+      "shopify_conversion_value": 6219.806704,
+      "shopify_conversions": 26.783368,
+      "shopify_cost": 2306.103143,
+      "shopify_roas": 2.6971069021261034,
+      "shopify_rolling_4_week_roas": 2.1001058718289296,
+      "shopify_week_start": "2026-03-30",
+      "woo_conversion_value": 2413.766668,
+      "woo_conversions": 11.90302,
+      "woo_cost": 942.982073,
+      "woo_roas": 2.5597163902817908,
+      "woo_rolling_4_week_roas": 1.864193228544676,
+      "woo_week_start": "2025-03-31"
+    },
+    {
+      "season_week": 14,
+      "shopify_conversion_value": 8688.518008,
+      "shopify_conversions": 23.611451,
+      "shopify_cost": 2159.650658,
+      "shopify_roas": 4.023112708444349,
+      "shopify_rolling_4_week_roas": 2.790832583795744,
+      "shopify_week_start": "2026-04-06",
+      "woo_conversion_value": 4847.686623,
+      "woo_conversions": 12.196778,
+      "woo_cost": 964.276999,
+      "woo_roas": 5.027276008892959,
+      "woo_rolling_4_week_roas": 2.803717405949333,
+      "woo_week_start": "2025-04-07"
+    },
+    {
+      "season_week": 15,
+      "shopify_conversion_value": 9117.708251,
+      "shopify_conversions": 31.470911,
+      "shopify_cost": 3322.403274,
+      "shopify_roas": 2.744311120312242,
+      "shopify_rolling_4_week_roas": 2.710581758526984,
+      "shopify_week_start": "2026-04-13",
+      "woo_conversion_value": 1207.911697,
+      "woo_conversions": 6.664942,
+      "woo_cost": 939.515911,
+      "woo_roas": 1.2856745509656409,
+      "woo_rolling_4_week_roas": 3.074980976407682,
+      "woo_week_start": "2025-04-14"
+    },
+    {
+      "season_week": 16,
+      "shopify_conversion_value": 32385.202701,
+      "shopify_conversions": 21.275535,
+      "shopify_cost": 2003.480312,
+      "shopify_roas": 16.164472646437467,
+      "shopify_rolling_4_week_roas": 5.761164699470504,
+      "shopify_week_start": "2026-04-20",
+      "woo_conversion_value": 3995.20073,
+      "woo_conversions": 10.890512,
+      "woo_cost": 897.244383,
+      "woo_roas": 4.452745323009729,
+      "woo_rolling_4_week_roas": 3.329193708556261,
+      "woo_week_start": "2025-04-21"
+    },
+    {
+      "season_week": 17,
+      "shopify_conversion_value": 1113.585438,
+      "shopify_conversions": 18.24514,
+      "shopify_cost": 2145.271002,
+      "shopify_roas": 0.5190884680591977,
+      "shopify_rolling_4_week_roas": 5.327178059104529,
+      "shopify_week_start": "2026-04-27",
+      "woo_conversion_value": 3874.482084,
+      "woo_conversions": 10.853826,
+      "woo_cost": 883.725484,
+      "woo_roas": 4.384259766350701,
+      "woo_rolling_4_week_roas": 3.779152682750844,
+      "woo_week_start": "2025-04-28"
+    },
+    {
+      "season_week": 18,
+      "shopify_conversion_value": 2444.53932,
+      "shopify_conversions": 18.498685,
+      "shopify_cost": 2006.584739,
+      "shopify_roas": 1.2182587022057483,
+      "shopify_rolling_4_week_roas": 4.754407581313298,
+      "shopify_week_start": "2026-05-04",
+      "woo_conversion_value": 533.606651,
+      "woo_conversions": 10.262694,
+      "woo_cost": 877.480656,
+      "woo_roas": 0.6081121530729221,
+      "woo_rolling_4_week_roas": 2.6712870557035333,
+      "woo_week_start": "2025-05-05"
+    },
+    {
+      "season_week": 19,
+      "shopify_conversion_value": 2809.992705,
+      "shopify_conversions": 22.259076,
+      "shopify_cost": 1888.774143,
+      "shopify_roas": 1.487733573341278,
+      "shopify_rolling_4_week_roas": 4.817601850266846,
+      "shopify_week_start": "2026-05-11",
+      "woo_conversion_value": 999.34,
+      "woo_conversions": 12.0,
+      "woo_cost": 962.329609,
+      "woo_roas": 1.0384591626963025,
+      "woo_rolling_4_week_roas": 2.596851817071338,
+      "woo_week_start": "2025-05-12"
+    },
+    {
+      "season_week": 20,
+      "shopify_conversion_value": 3551.30792,
+      "shopify_conversions": 20.617051,
+      "shopify_cost": 2280.710938,
+      "shopify_roas": 1.5571056642163568,
+      "shopify_rolling_4_week_roas": 1.1920465217306058,
+      "shopify_week_start": "2026-05-18",
+      "woo_conversion_value": 18.43,
+      "woo_conversions": 2.0,
+      "woo_cost": 856.773152,
+      "woo_roas": 0.021510944824750997,
+      "woo_rolling_4_week_roas": 1.515472235785166,
+      "woo_week_start": "2025-05-19"
+    },
+    {
+      "season_week": 21,
+      "shopify_conversion_value": 1072.756503,
+      "shopify_conversions": 9.516461,
+      "shopify_cost": 2101.672404,
+      "shopify_roas": 0.5104299323521022,
+      "shopify_rolling_4_week_roas": 1.1933926160878239,
+      "shopify_week_start": "2026-05-25",
+      "woo_conversion_value": 1711.092098,
+      "woo_conversions": 9.95641,
+      "woo_cost": 838.56978,
+      "woo_roas": 2.040488625764692,
+      "woo_rolling_4_week_roas": 0.9228648851112293,
+      "woo_week_start": "2025-05-26"
+    },
+    {
+      "season_week": 22,
+      "shopify_conversion_value": 2003.713859,
+      "shopify_conversions": 15.023136,
+      "shopify_cost": 2223.562281,
+      "shopify_roas": 0.9011278326320916,
+      "shopify_rolling_4_week_roas": 1.1110161661570697,
+      "shopify_week_start": "2026-06-01",
+      "woo_conversion_value": 6836.39189,
+      "woo_conversions": 14.486708,
+      "woo_cost": 968.65664,
+      "woo_roas": 7.057600813018738,
+      "woo_rolling_4_week_roas": 2.637723579568217,
+      "woo_week_start": "2025-06-02"
+    },
+    {
+      "season_week": 23,
+      "shopify_conversion_value": 1760.226466,
+      "shopify_conversions": 23.087028,
+      "shopify_cost": 2388.887622,
+      "shopify_roas": 0.7368393765322125,
+      "shopify_rolling_4_week_roas": 0.9325358813808671,
+      "shopify_week_start": "2026-06-08",
+      "woo_conversion_value": 9345.208829,
+      "woo_conversions": 11.74695,
+      "woo_cost": 966.996011,
+      "woo_roas": 9.664164818359318,
+      "woo_rolling_4_week_roas": 4.932840706515395,
+      "woo_week_start": "2025-06-09"
+    },
+    {
+      "season_week": 24,
+      "shopify_conversion_value": 3831.839002,
+      "shopify_conversions": 34.669615,
+      "shopify_cost": 2150.056074,
+      "shopify_roas": 1.782204217060806,
+      "shopify_rolling_4_week_roas": 0.9779288567320181,
+      "shopify_week_start": "2026-06-15",
+      "woo_conversion_value": 14373.612835,
+      "woo_conversions": 13.329225,
+      "woo_cost": 1094.705487,
+      "woo_roas": 13.130118562199186,
+      "woo_rolling_4_week_roas": 8.339857018757723,
+      "woo_week_start": "2025-06-16"
+    },
+    {
+      "season_week": 25,
+      "shopify_conversion_value": 4376.366448,
+      "shopify_conversions": 26.83896,
+      "shopify_cost": 2203.68577,
+      "shopify_roas": 1.9859303479551895,
+      "shopify_rolling_4_week_roas": 1.3352542654472856,
+      "shopify_week_start": "2026-06-22",
+      "woo_conversion_value": 3039.600654,
+      "woo_conversions": 24.066378,
+      "woo_cost": 1160.816326,
+      "woo_roas": 2.6185026742981905,
+      "woo_rolling_4_week_roas": 8.015608631079882,
+      "woo_week_start": "2025-06-23"
+    },
+    {
+      "season_week": 26,
+      "shopify_conversion_value": 1781.148136,
+      "shopify_conversions": 18.788494,
+      "shopify_cost": 2188.19441,
+      "shopify_roas": 0.8139807541140734,
+      "shopify_rolling_4_week_roas": 1.3156210686871683,
+      "shopify_week_start": "2026-06-29",
+      "woo_conversion_value": 968.214154,
+      "woo_conversions": 12.445572,
+      "woo_cost": 1097.641331,
+      "woo_roas": 0.8820860937496895,
+      "woo_rolling_4_week_roas": 6.41796643994242,
+      "woo_week_start": "2025-06-30"
+    },
+    {
+      "season_week": 27,
+      "shopify_conversion_value": 2282.682824,
+      "shopify_conversions": 16.451692,
+      "shopify_cost": 2229.33984,
+      "shopify_roas": 1.0239277040866053,
+      "shopify_rolling_4_week_roas": 1.399116420288571,
+      "shopify_week_start": "2026-07-06",
+      "woo_conversion_value": 2938.93878,
+      "woo_conversions": 16.378044,
+      "woo_cost": 1091.306538,
+      "woo_roas": 2.6930460669520886,
+      "woo_rolling_4_week_roas": 4.79705520533687,
+      "woo_week_start": "2025-07-07"
+    },
+    {
+      "season_week": 28,
+      "shopify_conversion_value": 1461.319617,
+      "shopify_conversions": 20.913573,
+      "shopify_cost": 2191.60029,
+      "shopify_roas": 0.6667819965473724,
+      "shopify_rolling_4_week_roas": 1.1235355625899515,
+      "shopify_week_start": "2026-07-13",
+      "woo_conversion_value": 1993.843496,
+      "woo_conversions": 13.960461,
+      "woo_cost": 1143.224576,
+      "woo_roas": 1.7440523391967389,
+      "woo_rolling_4_week_roas": 1.989899717022907,
+      "woo_week_start": "2025-07-14"
+    }
+  ],
+  "excluded": {
+    "duplicate_purchase_action": "[85ed] Google for WooCommerce purchase action",
+    "shopify_setup_period": "2025-10-01 through 2025-12-31",
+    "transition_weeks": [
+      "2025-10-13",
+      "2025-10-20"
+    ]
+  },
+  "generated_at_utc": "2026-07-21T18:08:23.182948+00:00",
+  "known_event_analysis": {
+    "pricing_incident": {
+      "exclude_incident_plus_following_attribution_week": {
+        "excluded_shopify_weeks": [
+          "2026-04-06",
+          "2026-04-13",
+          "2026-04-20"
+        ],
+        "included_paired_weeks": 25,
+        "shopify_roas": 1.8192518199259986,
+        "shopify_vs_woo_roas_change": -0.43693224249482654,
+        "woo_roas": 3.2309642945756547
+      },
+      "exclude_incident_weeks": {
+        "excluded_shopify_weeks": [
+          "2026-04-06",
+          "2026-04-13"
+        ],
+        "included_paired_weeks": 26,
+        "shopify_roas": 2.3086701826028513,
+        "shopify_vs_woo_roas_change": -0.2958646667830387,
+        "woo_roas": 3.2787307690629603
+      },
+      "record": {
+        "issue": "Variant price and compare-at-price sale mutation could restore from an already-corrupted baseline.",
+        "pricing_policy_documented_on": "2026-04-11",
+        "workflow_run_at_utc": "2026-04-09T16:18:45Z"
+      }
+    },
+    "scalamandre_catalog_expansion": {
+      "max_2_direct_performance_through_2026_07_19": {
+        "clicks": 1,
+        "conversion_value": 0.0,
+        "cost": 1.95,
+        "distinct_products": 3,
+        "impressions": 78
+      },
+      "merchant_center_exposure": {
+        "approved": 7270,
+        "evidence": "User-provided Google Merchant Center status-history screenshot",
+        "limited": 0,
+        "not_approved": 15,
+        "observed_at": "2026-05-28T03:39:00",
+        "total_products": 7465,
+        "under_review": 180
+      },
+      "pre_post_roas": {
+        "event_week": {
+          "conversion_value": 1072.756503,
+          "conversions": 9.516461,
+          "cost": 2101.672404,
+          "roas": 0.5104299323521022,
+          "weeks": [
+            "2026-05-25"
+          ]
+        },
+        "post_4_complete_weeks": {
+          "conversion_value": 11972.145775,
+          "conversions": 99.618739,
+          "cost": 8966.191747,
+          "roas": 1.3352542654472856,
+          "weeks": [
+            "2026-06-01",
+            "2026-06-08",
+            "2026-06-15",
+            "2026-06-22"
+          ]
+        },
+        "post_7_complete_weeks": {
+          "conversion_value": 17497.296352,
+          "conversions": 155.772498,
+          "cost": 15575.326287,
+          "roas": 1.1233983821323974,
+          "weeks": [
+            "2026-06-01",
+            "2026-06-08",
+            "2026-06-15",
+            "2026-06-22",
+            "2026-06-29",
+            "2026-07-06",
+            "2026-07-13"
+          ]
+        },
+        "pre_4_complete_weeks": {
+          "conversion_value": 9919.425383,
+          "conversions": 79.619952,
+          "cost": 8321.340822,
+          "roas": 1.1920465217306058,
+          "weeks": [
+            "2026-04-27",
+            "2026-05-04",
+            "2026-05-11",
+            "2026-05-18"
+          ]
+        }
+      },
+      "shopify_upload": {
+        "product_id_max": 10678639395121,
+        "product_id_min": 10678237462833,
+        "production_create_rows": 2111,
+        "production_workbook_generated_at_utc": "2026-05-21T16:48:37Z",
+        "shopify_created_product_rows_on_2026_05_21": 2132,
+        "shopify_status_in_2026_05_23_backup": "Draft and unpublished"
+      }
+    }
+  },
+  "maturity_sensitivity": [
+    {
+      "shopify_roas": 2.3888808518509133,
+      "shopify_vs_woo_roas_change": -0.26973004789402366,
+      "weeks": 28,
+      "window": "All 28 weeks through July 19",
+      "woo_roas": 3.2712298307793994
+    },
+    {
+      "shopify_roas": 2.5029084322078483,
+      "shopify_vs_woo_roas_change": -0.2586857893604384,
+      "weeks": 26,
+      "window": "Exclude latest 2 weeks",
+      "woo_roas": 3.3763124951408776
+    },
+    {
+      "shopify_roas": 2.5901934885599087,
+      "shopify_vs_woo_roas_change": -0.27118519764340365,
+      "weeks": 24,
+      "window": "Exclude latest 4 weeks",
+      "woo_roas": 3.5539803530123315
+    }
+  ],
+  "metric_definition": "ROAS = purchase conversion value / Google Ads cost",
+  "monthly_comparison": [
+    {
+      "month": "Jan",
+      "month_number": 1,
+      "shopify_conversion_value": 32407.309884,
+      "shopify_cost": 8381.138913,
+      "shopify_roas": 3.866695233237688,
+      "shopify_vs_woo_roas_change": -0.13815073303751246,
+      "woo_conversion_value": 11449.892528,
+      "woo_cost": 2552.0711840000004,
+      "woo_roas": 4.486509859044746
+    },
+    {
+      "month": "Feb",
+      "month_number": 2,
+      "shopify_conversion_value": 12834.188283,
+      "shopify_cost": 10157.821221000002,
+      "shopify_roas": 1.2634784570205813,
+      "shopify_vs_woo_roas_change": -0.29665927912840406,
+      "woo_conversion_value": 5424.581018999999,
+      "woo_cost": 3019.702238,
+      "woo_roas": 1.796395999160762
+    },
+    {
+      "month": "Mar",
+      "month_number": 3,
+      "shopify_conversion_value": 29457.053404,
+      "shopify_cost": 12182.736952000001,
+      "shopify_roas": 2.417933960165177,
+      "shopify_vs_woo_roas_change": 0.4170975116465647,
+      "woo_conversion_value": 7744.131703000001,
+      "woo_cost": 4538.663978,
+      "woo_roas": 1.7062579958634694
+    },
+    {
+      "month": "Apr",
+      "month_number": 4,
+      "shopify_conversion_value": 51305.014398,
+      "shopify_cost": 9630.805246,
+      "shopify_roas": 5.327178059104529,
+      "shopify_vs_woo_roas_change": 0.4096223429710384,
+      "woo_conversion_value": 13925.281134,
+      "woo_cost": 3684.7627770000004,
+      "woo_roas": 3.7791526827508437
+    },
+    {
+      "month": "May",
+      "month_number": 5,
+      "shopify_conversion_value": 9878.596448,
+      "shopify_cost": 8277.742224000001,
+      "shopify_roas": 1.1933926160878234,
+      "shopify_vs_woo_roas_change": 0.2931390448819473,
+      "woo_conversion_value": 3262.4687490000006,
+      "woo_cost": 3535.1531969999996,
+      "woo_roas": 0.9228648851112295
+    },
+    {
+      "month": "Jun",
+      "month_number": 6,
+      "shopify_conversion_value": 13753.293911,
+      "shopify_cost": 11154.386157,
+      "shopify_roas": 1.2329942425714784,
+      "shopify_vs_woo_roas_change": -0.8113278918456799,
+      "woo_conversion_value": 34563.028362,
+      "woo_cost": 5288.8157949999995,
+      "woo_roas": 6.535116688063816
+    },
+    {
+      "month": "Jul",
+      "month_number": 7,
+      "shopify_conversion_value": 3744.002441,
+      "shopify_cost": 4420.94013,
+      "shopify_roas": 0.8468792453427774,
+      "shopify_vs_woo_roas_change": -0.6163670079811818,
+      "woo_conversion_value": 4932.782276,
+      "woo_cost": 2234.5311140000003,
+      "woo_roas": 2.2075245428871657
+    }
+  ],
+  "notes": [
+    "Periods contain 28 complete January-through-July weeks separated by 364 days.",
+    "WooCommerce uses SR Sales only; the duplicate WooCommerce purchase action is excluded.",
+    "Shopify uses Google Shopping App Purchase only.",
+    "The two tracking transition weeks beginning 2025-10-13 and 2025-10-20 are excluded.",
+    "October through December 2025 is excluded because the Shopify store was not fully set up.",
+    "This is an observational era comparison; spend, demand, bidding, and other conditions differ.",
+    "Google Ads standard conversion metrics are attributed to interaction date; event-window exclusions therefore include a conservative following week sensitivity.",
+    "The Scalamandre feed expansion is evaluated separately using product IDs from the Shopify import range."
+  ],
+  "paired_week_bootstrap": {
+    "absolute_roas_difference_95_interval": [
+      -2.4804861352538516,
+      0.648918521470895
+    ],
+    "relative_roas_difference_95_interval": [
+      -0.5741558323509723,
+      0.26441488812383107
+    ],
+    "samples": 20000,
+    "seed": 20260721,
+    "shopify_weekly_roas_win_rate": 0.42857142857142855
+  },
+  "periods": {
+    "Shopify": {
+      "end": "2026-07-19",
+      "purchase_action": "Google Shopping App Purchase",
+      "start": "2026-01-05"
+    },
+    "WooCommerce": {
+      "end": "2025-07-20",
+      "purchase_action": "SR Sales",
+      "start": "2025-01-06"
+    }
+  },
+  "platform_summary": {
+    "Shopify": {
+      "average_conversion_value": 236.26199616354634,
+      "average_cpc": 1.1792523021525916,
+      "clicks": 54446.0,
+      "conversion_rate": 0.010842821605732134,
+      "conversion_value": 153379.458769,
+      "conversions": 649.192258,
+      "cost": 64205.570843,
+      "ctr": 0.011709290612179589,
+      "impressions": 4649812.0,
+      "interactions": 59873.0,
+      "median_weekly_roas": 1.5224196187788173,
+      "roas": 2.3888808518509133,
+      "weeks": 28
+    },
+    "WooCommerce": {
+      "average_conversion_value": 264.58522258909744,
+      "average_cpc": 0.97244308173566,
+      "clicks": 25558.0,
+      "conversion_rate": 0.010502121808674254,
+      "conversion_value": 81302.165771,
+      "conversions": 307.281582,
+      "cost": 24853.700283,
+      "ctr": 0.010173925643324252,
+      "impressions": 2512108.0,
+      "interactions": 29259.0,
+      "median_weekly_roas": 2.300102508023241,
+      "roas": 3.2712298307793994,
+      "weeks": 28
+    }
+  },
+  "shopify_vs_woo_percent_change": {
+    "average_conversion_value": -0.10704765046359843,
+    "average_cpc": 0.2126697431461071,
+    "conversion_rate": 0.032441044130384844,
+    "conversion_value": 0.8865359528184862,
+    "conversions": 1.1126949873617873,
+    "cost": 1.5833405131595955,
+    "roas": -0.26973004789402366
+  }
+}

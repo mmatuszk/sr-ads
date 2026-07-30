@@ -29,6 +29,20 @@ The OAuth grant must include the existing Drive and Sheets scopes plus:
 https://www.googleapis.com/auth/adwords
 ```
 
+Use the SR Workspace-approved OAuth client stored outside Git at:
+
+```text
+~/.config/sr-gem-drive/oauth-client.json
+```
+
+Create or refresh local ADC with all required scopes:
+
+```bash
+gcloud auth application-default login \
+  --client-id-file "$HOME/.config/sr-gem-drive/oauth-client.json" \
+  --scopes "https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/spreadsheets,https://www.googleapis.com/auth/adwords"
+```
+
 Google Ads also requires a developer token created in a Google Ads manager
 account. Store the token and account IDs outside Git in:
 
@@ -76,6 +90,91 @@ the manager header, run:
 
 Both paths were verified successfully on July 16, 2026. The verifier reads
 account metadata and campaign names/statuses only; it does not mutate Google Ads.
+
+## Export Weekly Campaign Performance
+
+Export the last `104` complete Monday-through-Sunday weeks for `Performance
+Max-2` (campaign ID `20647427212`):
+
+```bash
+.venv/bin/python google/scripts/export_campaign_weekly_performance.py
+```
+
+The exporter excludes the current partial week and writes a campaign-level CSV,
+a conversion-action detail CSV, and retrieval metadata under the dated
+`google/data/campaign-performance/` folder. It is read-only. Use
+`--campaign-id`, `--weeks`, or `--output-dir` to override the defaults.
+
+For the Max-2 analysis, keep `SR Sales` and exclude the duplicate legacy
+WooCommerce purchase action from the adjusted series:
+
+```bash
+.venv/bin/python google/scripts/export_campaign_weekly_performance.py \
+  --exclude-conversion-action-name '[85ed] Google for WooCommerce purchase action'
+```
+
+This preserves the raw reported campaign and conversion-action files and adds a
+`weekly-adjusted.csv` file. The metadata records the exclusion and method.
+
+Review conversion-action detail before interpreting long-range ROAS. Historical
+tracking migrations can leave more than one value-bearing purchase action active
+in the same week and inflate Google Ads' reported conversion value. The export
+metadata identifies weeks with such overlaps; raw values are not silently
+adjusted.
+
+## Compare WooCommerce And Shopify ROAS
+
+Run the seasonally matched Max-2 comparison after exporting the weekly data:
+
+```bash
+python3 google/scripts/analyze_max_2_woo_vs_shopify.py
+```
+
+The analysis uses `SR Sales` for WooCommerce and `Google Shopping App Purchase`
+for Shopify. It excludes the duplicate legacy WooCommerce purchase action and
+October through December 2025, when the Shopify store was not fully set up. The
+comparison aligns `28` complete January-through-July weeks in 2025 and 2026.
+
+The reproducible reconciliation query is:
+
+```text
+google/config/reports/max-2-woo-vs-shopify.sql
+```
+
+Export weekly product-level Shopping performance when investigating feed or
+catalog events:
+
+```bash
+.venv/bin/python google/scripts/export_campaign_product_performance.py
+```
+
+The default export covers Max-2 from January 5 through July 19, 2026 and writes
+product attributes, impressions, clicks, cost, conversions, and conversion
+value to the dated campaign-performance folder. The export is read-only and can
+be large; the July 21 run contains `101,214` product-week rows.
+
+The generated `performance-max-2-weekly-products.csv` is intentionally ignored
+by Git because it is large and reproducible from the Google Ads API. Its small
+metadata JSON remains tracked. To reproduce the July 21 analysis input exactly,
+first complete the OAuth and developer-token setup above, then run from the
+repository root:
+
+```bash
+.venv/bin/python google/scripts/export_campaign_product_performance.py \
+  --start-date 2026-01-05 \
+  --end-date 2026-07-19 \
+  --output-dir google/data/campaign-performance/2026-07-21
+```
+
+Use the same command before rerunning
+`google/scripts/analyze_max_2_woo_vs_shopify.py` in a fresh checkout. Override
+the dates and output directory when creating a new dated analysis snapshot.
+
+The pricing-error and Scalamandre catalog-event review is documented in:
+
+```text
+google/investigations/2026-07-21-max-2-known-event-analysis.md
+```
 
 ### Developer Token Normalization Gotcha
 
