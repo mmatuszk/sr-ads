@@ -175,6 +175,98 @@ Do not solve an account-routing error by swapping the two customer IDs or
 creating another developer token. The manager ID identifies the API login
 context; the operating ID identifies the account containing the campaigns.
 
+## GMC Ad-Control Feed
+
+Shopify `custom.ad_status` is translated to Merchant Center
+`custom_label_1` through one complete hosted TSV. Pine serves the file at:
+
+```text
+https://pine.silkresource.com/mm-automation/feeds/gmc-ad-controls.tsv
+```
+
+Merchant Center fetches the file through HTTPS Basic authentication. Published
+offers receive an explicit `active` or `exclude` value. Webhook changes and
+attended bulk updates regenerate this same file; neither path performs routine
+Merchant API product writes. The accepted scheduled-fetch delay avoids an
+unattended Google credential on Pine and prevents multiple supplemental sources
+from competing.
+
+The production file source is `SR Ad Controls Hosted TSV` (`10702577630`). The
+historical API-input source (`10696160670`) was deleted on August 6, 2026 after
+all 32 exclusions and a representative active sample were verified. Local
+Merchant API access remains available for read-only audits and historical
+attended tooling.
+
+## Manage Max-2 Product Exclusions
+
+The Max-2 listing-group command enforces the Shopify/GMC ad-control value
+`custom_label_1 = exclude` in both enabled asset groups. It preserves existing
+subdivisions and includes every other label value. The default invocation is a
+read-only plan plus Google Ads API validation:
+
+```bash
+.venv/bin/python google/scripts/apply_max_2_ad_exclusion.py
+```
+
+Live changes require both the apply flag and exact account confirmations:
+
+```bash
+.venv/bin/python google/scripts/apply_max_2_ad_exclusion.py \
+  --apply \
+  --confirm-customer-id 5626118344 \
+  --confirm-campaign-id 20647427212
+```
+
+The command is idempotent and refuses to run if the campaign name or enabled
+asset-group set differs from the guarded Max-2 configuration. Both the identity
+guard and listing-filter mutation query are restricted to enabled asset groups;
+paused or removed groups are outside the command's scope.
+
+Max-13 uses the same guarded implementation with its own fixed campaign and
+asset-group identities:
+
+```bash
+.venv/bin/python google/scripts/apply_max_13_ad_exclusion.py
+```
+
+Its live apply requires Max-13's exact campaign confirmation:
+
+```bash
+.venv/bin/python google/scripts/apply_max_13_ad_exclusion.py \
+  --apply \
+  --confirm-customer-id 5626118344 \
+  --confirm-campaign-id 23453016844
+```
+
+## Manage Max Campaign Target ROAS
+
+The guarded target-ROAS command manages only Performance Max-2
+(`20647427212`) and Performance Max-13 (`23453016844`). It validates their
+names, enabled status, Performance Max channel, and Maximize Conversion Value
+bidding strategy before proposing a change. The default invocation is
+read-only:
+
+```bash
+.venv/bin/python google/scripts/set_max_campaign_target_roas.py \
+  --target-roas-percent 80
+```
+
+Live changes require exact confirmation of the operating account, both
+campaign IDs, and the requested percentage:
+
+```bash
+.venv/bin/python google/scripts/set_max_campaign_target_roas.py \
+  --target-roas-percent 80 \
+  --apply \
+  --confirm-customer-id 5626118344 \
+  --confirm-campaign-id 20647427212 \
+  --confirm-campaign-id 23453016844 \
+  --confirm-target-roas-percent 80
+```
+
+The command re-queries both campaigns after mutation and fails if either
+verified target differs from the requested value.
+
 ## Export Weekly Campaign Performance
 
 Export the last `104` complete Monday-through-Sunday weeks for `Performance
