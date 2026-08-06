@@ -55,3 +55,14 @@ Monitor whether the Consideration campaign improves assisted demand and
 downstream Catalog sales performance. Avoid judging the Consideration campaign
 only on immediate checkout ROAS; its purpose is to support the Catalog sales
 campaign by improving reach, engagement, and retargetable audience quality.
+
+## Outcome
+
+The Consideration campaign was paused on August 6, 2026 after it generated no
+directly attributed checkout revenue and the Catalog sales campaign did not
+show the hoped-for improvement during the test. The Catalog sales campaign
+remained active and its budget was increased to `$140/day`.
+
+See
+`pinterest/changes/2026-08-06-consideration-pause-catalog-budget-increase.md`
+for the decision record and performance snapshot.
